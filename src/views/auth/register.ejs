@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="../">
+
+  <%- include('../partials/auth-header') -%>
+  <link rel="stylesheet" type="text/css" href="<%= pathAssets  %>css/auth.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="<%= pathAssets  %>css/register.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="login___content d-flex">
+    <div class="login___left login___background d-flex justify-content-center align-items-center">
+      <img src="<%= pathAssets  %>img/fiis.png" class="login___img" />
+    </div>
+    <div class="login___right d-flex position-relative" id="register___form">
+      <div class="login___form form m-auto p-2" action="http://127.0.0.1:5000/auth/users" method="POST">
+        <img src="<%= pathAssets  %>img/fiis.png" class="login___img mb-3  top-0" />
+
+        <div class="mb-3  text-center">
+          <p class="h2">Registrarse</p>
+        </div>
+        <div class="mb-3">
+          <label for="code" class="form-label">Ingrese su Código</label>
+          <input type="text" class="form-control" id="code" placeholder="Ingrese su Código" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Ingrese su Clave</label>
+          <input type="password" class="form-control" id="password" placeholder="Ingrese su Clave" required>
+        </div>
+        <div class="mb-3">
+          <label for="name" class="form-label">Ingrese su Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Ingrese su Nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Ingrese su Apellido</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Ingrese su Apellido" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="celphone" class="form-label">Ingrese su Celular</label>
+          <input type="number" class="form-control" id="celphone" placeholder="Ingrese su Celular" required>
+        </div>
+        <div class="mb-3">
+          <label for="birthDate" class="form-label">Ingrese su Fecha de Nacimiento</label>
+          <input type="date" class="form-control" id="birthDate" placeholder="Ingrese su Fecha de Nacimiento" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Ingrese su Correo</label>
+          <input type="text" class="form-control" id="email" placeholder="Ingrese su Correo" required>
+        </div>
+        <div class="mb-3">
+          <label for="department" class="form-label">Ingrese el Departamento del Padre</label>
+          <input type="text" class="form-control" id="department" placeholder="Ingrese el Departamento del Padre">
+        </div>
+        <div class="mb-3 text-center">
+          <a  href="<%= pathViews  %>auth/recovery.ejs" class="btn btn-link  d-flex justify-content-center align-items-center">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="mb-3 d-flex justify-content-between">
+          <a href="<%= pathViews  %>auth/login.ejs" class="btn  btn-red-200 width-120 d-flex justify-content-center align-items-center">Ingresar</a>
+          <button type="button" onclick="register()" class="btn btn-blue-200 width-120">Registrar</button>
+        </div>
+      </div>
+
+
+      <footer class="login___footer bottom-0 pl-2 mb-2 ms-4 small">
+        <p class="mb-1">Encargado: Cordova Nery, Teodoro Luciano</p>
+        <p class="mb-1">Fecha: <span id="dateNow"></span></p>
+        <p class="mb-1">Hora: <span id="hourNow"></span></p>
+      </footer>
+
+    </div>
+  </div>
+
+  <%- include('../partials/auth-footer') -%>
+
+  <script type="text/javascript" src="<%= pathAssets  %>js/login.js"></script>
+
+</body>
+
+</html>

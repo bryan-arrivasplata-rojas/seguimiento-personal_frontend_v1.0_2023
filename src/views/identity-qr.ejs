@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Basic Page Info -->
+    <link rel="stylesheet" type="text/css" href="<%= pathAssets %>css/dashboard-qr.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <%- include('partials/dashboard-header') -%>
+    
+  </head>
+
+  <body>
+    <%- include('common/dashboard-loader') -%>
+
+    <%- include('common/dashboard-header') -%>
+
+
+    <%- include('common/dashboard-left-side-bar') -%>
+
+    <div class="mobile-menu-overlay"></div>
+
+    <div class="main-container">
+      <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+          <div class="page-header">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="title">
+                  <h4>Generador de Código QR</h4>
+                  <p class="user-welcome"></p>
+                </div>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" onclick="go('index')" style="cursor: pointer;" >Ir a Inicio</a></li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="col-md-6 col-sm-12 text-right">
+
+              </div>
+            </div>
+          </div>
+          <!-- Simple Datatable start -->
+          <div class="card-box mb-30">
+            <div class="form p-4">
+
+              <div class="form-group">
+                <label for="code">Código del personal</label>
+                <input type="text" class="form-control" id="code" placeholder="Código del personal" readonly>
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="text" class="form-control" id="password" placeholder="Contraseña">
+              </div>
+
+              <div class="mt-2 mb-2" id="codeQR"></div>
+
+              <button id="btn-generate-qr"  class="btn btn-primary">Generar QR</button>
+              <a href="#" id="btn-download-qr" class="btn btn-success">Descargar QR</a>
+
+            </div>
+          </div>
+
+          <!-- Export Datatable End -->
+        </div>
+      </div>
+    </div>
+    <!-- js -->
+    <%- include('partials/dashboard-footer') -%>
+    <script type="text/javascript" src="<%= pathAssets  %>js/dashboard-global-qr.js"></script>
+    <script type="text/javascript" src="<%= pathAssets  %>libraries/plugins/qr/jquery.min.js"></script>
+    <script type="text/javascript" src="<%= pathAssets  %>libraries/plugins/qr/qrcode.js"></script>
+    <script type="text/javascript" src="<%= pathAssets  %>js/dashboard-qr.js"></script>
+  </body>
+</html>

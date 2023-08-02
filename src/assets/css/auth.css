@@ -1,0 +1,90 @@
+.login___content {}
+
+.login___background {
+    background-image: url('../img/background.jpg');
+    background-repeat: round;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.login___right .login___img {
+    max-width: 480px;
+    display: none;
+}
+.login___left .login___img {
+    width: 70%;
+}
+.login___left {
+    height: 100vh;
+    width: 70%;
+}
+
+.login___right {
+
+    width: 30%;
+}
+
+.login___form {
+    width: 80%;
+}
+
+.login___line {
+    border-style: solid;
+    width: 65%;
+    border-width: thin;
+}
+
+@media screen and (max-width: 1500px) {
+    .login___left{
+        width: 60%;
+    }
+
+    .login___right{
+        width: 40%;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    .login___left{
+        width: 50%;
+    }
+
+    .login___right{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .login___content {
+        height: 100vh;
+    }
+
+    .login___left {
+        display: none!important;
+    }
+
+    .login___right .login___img {
+        display: block;
+    }
+    .login___right{
+        width: 100%;
+    }
+    .login___form {
+        width: 95%;
+    }
+    .login___right .login___img{
+        width: 90%;
+        margin-top: 30px;
+    }
+    .login___left .login___img {
+        width: 95%;
+    }
+}
+
+
+
+@media  screen and (max-height: 627px) {
+    .login___footer{
+        display: none;
+    }
+}

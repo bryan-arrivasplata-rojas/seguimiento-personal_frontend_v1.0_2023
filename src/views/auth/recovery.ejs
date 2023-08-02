@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="../">
+
+  <%- include('../partials/auth-header') -%>
+  <link rel="stylesheet" type="text/css" href="<%= pathAssets  %>css/auth.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="login___content d-flex">
+    <div class="login___left login___background d-flex justify-content-center align-items-center">
+      <img src="<%= pathAssets  %>img/fiis.png" class="login___img" />
+    </div>
+    <div class="login___right d-flex position-relative">
+      <div class="login___form form m-auto p-2">
+        <img src="<%= pathAssets  %>img/fiis.png" class="login___img mb-3 position-absolute top-0" />
+
+        <div class="mb-3  text-center">
+          <p class="h2">Recuperar Contraseña</p>
+        </div>
+        <div class="mb-3">
+          <label for="code" class="form-label">Ingrese su Código</label>
+          <input type="text" class="form-control" id="code" placeholder="Ingrese su Código">
+        </div>
+        <div class="mb-3">
+          <label for="department" class="form-label">Ingrese el Departamento del Padre</label>
+          <input type="text" class="form-control" id="department" placeholder="Ingrese el Departamento del Padre">
+        </div>
+       
+        <div class="mb-3 d-flex justify-content-between">
+          <a href="<%= pathViews  %>auth/login.ejs" class="btn btn-red-200 width-120 d-flex justify-content-center align-items-center">Ingresar</a>
+          <button type="button" onclick="recovery()" id="btn-recovery" class="btn btn-blue-200 width-120">Recuperar</button>
+        </div>
+      </div>
+
+
+      <footer class="login___footer position-absolute bottom-0 pl-2 mb-2 ms-4 small">
+        <p class="mb-1">Encargado: Cordova Nery, Teodoro Luciano</p>
+        <p class="mb-1">Fecha: <span id="dateNow"></span></p>
+        <p class="mb-1">Hora: <span id="hourNow"></span></p>
+      </footer>
+
+    </div>
+  </div>
+
+  <%- include('../partials/auth-footer') -%>
+
+  <script type="text/javascript" src="<%= pathAssets  %>js/login.js"></script>
+
+</body>
+
+</html>

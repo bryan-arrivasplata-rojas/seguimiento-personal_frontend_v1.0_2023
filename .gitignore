@@ -1,0 +1,5 @@
+node_modules/
+python/Config/__pycache__
+python/Controllers/__pycache__
+python/Utils/__pycache__
+electron_v24.0.0_proy-fiis_v1.0_2023-win32-x64/

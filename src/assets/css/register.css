@@ -1,0 +1,19 @@
+.login___right {
+    height: 100vh;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+    .login___left {
+        display: none!important;
+    }
+
+    .login___right{
+        width: 100%!important;
+    }
+    .login___right .login___img {
+        max-width: 480px;
+        display: block!important;
+    }
+}

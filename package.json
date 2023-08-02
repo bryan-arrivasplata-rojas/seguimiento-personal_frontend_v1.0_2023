@@ -1,0 +1,40 @@
+{
+  "name": "electron_v24.0.0_proy-fiis_v1.0_2023",
+  "version": "1.0.0",
+  "description": "Aplicación de escritorio multiplataforma en Electron",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanDaniellAR/electron_v24.0.0_proy-fiis_v1.0_2023.git"
+  },
+  "keywords": [
+    "Electron",
+    "Escritorio",
+    "Multiplataforma",
+    "Node.js",
+    "Chromium"
+  ],
+  "author": "Bryan Daniell Arrivasplata Rojas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryanDaniellAR/electron_v24.0.0_proy-fip_v1.0_2023/issues"
+  },
+  "homepage": "https://github.com/BryanDaniellAR/electron_v24.0.0_proy-fip_v1.0_2023#readme",
+  "devDependencies": {
+    "electron": "^24.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs-electron": "^2.1.1",
+    "electron-alert": "^0.1.20",
+    "electron-browser-storage": "^1.0.7",
+    "jquery": "^3.6.4",
+    "jspdf": "^2.5.1"
+  }
+}

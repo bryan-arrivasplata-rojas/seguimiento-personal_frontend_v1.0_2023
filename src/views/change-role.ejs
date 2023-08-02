@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Basic Page Info -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <%- include('partials/dashboard-header') -%>
+    
+
+  </head>
+
+  <body>
+    <%- include('common/dashboard-loader') -%>
+
+    <%- include('common/dashboard-header') -%>
+
+
+    <%- include('common/dashboard-left-side-bar') -%>
+
+    <div class="mobile-menu-overlay"></div>
+
+    <div class="main-container">
+      <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+          <div class="page-header">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="title">
+                  <h4>Cambiar Cargo</h4>
+                  <p class="user-welcome"></p>
+                </div>
+                <nav aria-label="breadcrumb" role="navigation">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" onclick="go('index')" style="cursor: pointer;">Ir a Inicio</a></li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="col-md-6 col-sm-12 text-right">
+
+              </div>
+            </div>
+          </div>
+          <!-- Simple Datatable start -->
+          <div class="card-box mb-30">
+            <div class="form p-4">
+              <div class="form-group">
+                <label for="email">Seleccionar Código</label>
+                <select class="form-control" name="code" onchange="selectCode()">
+                  <optgroup label="Seleccione Código">
+                  </optgroup>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="name">Nombres</label>
+                <input type="text" class="form-control" id="name" placeholder="Nombres" readonly>
+              </div>
+              <div class="form-group">
+                <label for="lastname">Apellidos</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Apellidos" readonly>
+              </div>
+              <div class="form-group">
+                <label for="celphone">Número de Contacto</label>
+                <input type="text" class="form-control" id="number" placeholder="Número de Contacto" readonly>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="text" class="form-control" id="email" placeholder="Correo Electrónico" readonly>
+              </div>
+              <div class="form-group">
+                <label for="email">Seleccionar Cargo</label>
+                <select class="form-control" id="role" name="role">
+                  <optgroup label="Seleccione Rol">
+                  </optgroup>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="save()">Guardar</button>
+            </div>
+          </div>
+
+          <!-- Export Datatable End -->
+        </div>
+      </div>
+    </div>
+    <!-- js -->
+    <%- include('partials/dashboard-footer') -%>
+    <script type="text/javascript" src="<%= pathAssets  %>js/dashboard-change-role.js"></script>
+  </body>
+</html>

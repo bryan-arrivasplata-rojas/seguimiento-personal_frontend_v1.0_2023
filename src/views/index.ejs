@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Basic Page Info -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<%- include('partials/dashboard-header') -%>
+	
+	<link rel="stylesheet" type="text/css" href="<%= pathAssets %>libraries/plugins/datatables/css/datatables.min.css">
+
+	</head>
+	<body>
+		<%- include('common/dashboard-loader') -%>
+
+		<%- include('common/dashboard-header') -%>
+
+
+		<%- include('common/dashboard-left-side-bar') -%>
+
+		<div class="mobile-menu-overlay"></div>
+
+		<div class="main-container">
+			<div class="pd-ltr-20 xs-pd-20-10">
+				<div class="min-height-200px">
+					<div class="page-header">
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								<div class="title">
+									<h4>Menú Principal</h4>
+									<!--<p class="user-welcome">Bienvenido: Docente Bryan Daniell Arrivasplata Rojas</p>-->
+									<p class="user-welcome"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Simple Datatable start -->
+					<div class="index___card card-box mb-30" id="index___card">
+						<div class="pd-20">
+							<h4 class="text-blue h4">Historial de Registro</h4>
+						</div>
+						<div class="pb-20">
+							<table class="data-table table stripe hover nowrap" id="date-table">
+								<thead>
+									<tr>
+										<th>Codigo</th>
+										<th>Nombres</th>
+										<th>Apellidos</th>
+										<th>Fecha y Hora de Ingreso</th>
+										<th>Cargo</th>
+										<th>Tipo Login</th>
+									</tr>
+								</thead>
+								<tbody class="table-history">
+								</tbody>
+							</table>
+						</div>
+					</div>
+			
+					<!-- Export Datatable End -->
+				</div>
+			</div>
+		</div>
+		<!-- js -->
+		<%- include('partials/dashboard-footer') -%>
+		<script type="text/javascript" src="<%= pathAssets  %>js/dashboard-global.js"></script>
+		<script src="<%= pathAssets  %>libraries/plugins/datatables/js/datatables.min.js"></script>
+	</body>
+</html>

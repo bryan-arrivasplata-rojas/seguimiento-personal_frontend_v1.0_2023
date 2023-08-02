@@ -1,0 +1,76 @@
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+input {
+    border-radius: 0px !important;
+    height: 50px !important;
+}
+
+button, a.btn {
+    border-radius: 0px !important;
+    height: 50px !important;
+}
+
+.width-120 {
+    width: 120px !important;
+}
+
+.height-auto {
+    height: auto !important;
+}
+/*start button red*/
+
+
+.btn-red-200 {
+    color: #fff;
+    background-color: #780000;
+    border-color: #780000;
+}
+
+.btn-red-200:hover {
+    color: #fff;
+    background-color: #780000c4;
+    border-color: #780000c4;
+}
+
+.btn-red-200:focus {
+    color: #fff;
+    background-color: #780000;
+    border-color: #780000;
+    box-shadow: 0 0 0 0.25rem #940303b0;
+}
+
+.btn-red-200:disabled, .btn-red-200.disabled {
+    color: #fff;
+    background-color: #3a0202;
+    border-color: #3a0202;
+}
+
+/*end button red*/
+/*start button blue*/
+.btn-blue-200 {
+    color: #fff;
+    background-color: #3e495e;
+    border-color: #3e495e;
+}
+
+.btn-blue-200:hover {
+    color: #fff;
+    background-color: #3e495ec4;
+    border-color: #3e495ec4;
+}
+
+.btn-blue-200:focus {
+    color: #fff;
+    background-color: #3e495e;
+    border-color: #3e495e;
+    box-shadow: 0 0 0 0.25rem #3e495e;
+}
+
+.btn-blue-200:disabled, .btn-blue-200.disabled {
+    color: #fff;
+    background-color: #202b3f;
+    border-color: #202b3f;
+}
+/*end button blue*/

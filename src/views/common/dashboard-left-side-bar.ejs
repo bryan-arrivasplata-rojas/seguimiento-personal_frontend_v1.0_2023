@@ -1,0 +1,37 @@
+<div class="left-side-bar">
+    <div class="brand-logo">
+        <a href="<%= pathViews  %>index.ejs">
+            <img src="<%= pathBase %>vendor/images/deskapp-logo.svg" alt="" class="dark-logo">
+            <img src="<%= pathBase %>vendor/images/deskapp-logo-white.svg" alt="" class="light-logo">
+        </a>
+        <div class="close-sidebar" data-toggle="left-sidebar-close">
+            <i class="ion-close-round"></i>
+        </div>
+    </div>
+    <div class="menu-block customscroll">
+        <div class="sidebar-menu">
+            <ul id="accordion-menu">
+                <li>
+                    <a href="#" onclick="go('index')" style="cursor: pointer;" class="dropdown-toggle no-arrow">
+                        <span class="micon dw dw-house-1"></span><span class="mtext">Inicio</span>
+                    </a>
+                </li>
+                <li class="dashboard-lef-side-bar___current-location" id="dashboard-lef-side-bar___current-location">
+                    <a href="#" onclick="go('current-location')" style="cursor: pointer;" class="dropdown-toggle no-arrow">
+                        <span class="micon dw dw-map2"></span><span class="mtext">Ubicación</span>
+                    </a>
+                </li>
+                <li class="dashboard-lef-side-bar___change-role" id="dashboard-lef-side-bar___change-role">
+                    <a href="#" onclick="go('change-role')" style="cursor: pointer;" class="dropdown-toggle no-arrow">
+                        <span class="micon dw dw-deal"></span><span class="mtext">Cambio de Cargo</span>
+                    </a>
+                </li>
+                <li class="dashboard-lef-side-bar___identity-qr">
+                    <a href="#" onclick="go('identity-qr')" style="cursor: pointer;" class="dropdown-toggle no-arrow">
+                        <span class="micon dw dw-id-card"></span><span class="mtext">Identidad QR</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
